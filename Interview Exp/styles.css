@@ -1,0 +1,504 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgba(217, 204, 255, 0.48);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* ----------------header styling goes here------------ */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: white;
+  padding: 10px 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-bar-logo a{
+    text-decoration: none;
+    font-size: 20px;
+    color:#5b2ff0;
+    font-weight: 700;   
+}
+.nav-bar-items{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.nav-bar-items ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    align-items: center;
+    gap: 25px;     
+}
+.nav-bar-items ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-bar-items ul li a:hover {
+    text-decoration: underline #5b2ff0;
+}
+.nav-bar-items ul li a button {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: #5b2ff0;;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.nav-bar-items ul li a button:hover {
+    background-color: #005ce6;
+  }
+.nav-bar-items div{
+    display: flex;
+    align-items: center;
+}
+.nav-bar-items div img{
+    width: 50px;
+    border: solid 3px #5b2ff0;
+    border-radius: 50%;
+}
+.nav-bar-items div i{
+    display: none;
+}
+
+
+/* ----------------main-content styling goes here --------------- */
+
+.main-container{
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+/* ------------------sub-container1 styling goes here------------------ */
+
+.sub-container1{
+    background-color: white;
+    width: 65%;
+    /* min-width: 987px; */
+    margin-left: 60px;
+    margin-top: 30px;
+    padding: 25px 40px ;
+    padding-right: 70px;
+    padding-bottom: 40px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 15px -3px, rgba(0, 0, 0, 0.01) 0px 4px 6px -2px;
+}
+.sub-container1-title{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+.sub-container1-title div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.sub-container1-title div h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.sub-container1-title div i{
+    color:darkgray;
+    font-size: 24px;
+}
+.sub-container1-title h5{
+    color: rgb(2 6 12 / 60%);
+    font-weight: 500;
+}
+.sub-container1-content p{
+    color: rgb(77, 81, 86);
+    font-size: 15px;
+}
+.sub-container1-content h3{
+    color: rgb(194, 133, 255);
+}
+.likes-share-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    width: 95%;
+    margin: auto;
+    align-items: center;
+}
+.likes-share-container div{
+    display: flex;
+    gap: 30px;
+    color: rgb(2 6 12 / 60%);
+    align-items: center;
+}
+.likes-share-container div div{
+    display: flex;
+    gap: 10px;
+    color: rgb(2 6 12 / 60%);
+    align-items: center;
+}
+.likes-share-container div div i{
+    font-size: 23px;
+}
+.likes-share-container div div p{
+    font-size: 18px;
+}
+.likes-share-container button{
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #5b2ff0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* ---------------------sub-container2 styling goes here -------------------- */
+
+.sub-container2{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-left: 60px;
+    background-color: white;
+    width: 65%;
+    margin-top: 30px;
+    padding: 25px 40px ;
+    padding-right: 70px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.comment-box-div1{
+    display: flex;
+    gap: 25px;
+}
+.comment-box-div1 p{
+    color: #333;
+}
+.comment-box-div1 i{
+    color: rgb(2 6 12 / 70%);
+    margin-right: 5px;
+}
+.comment-box-div2{
+    display: flex;
+    gap: 10px;
+}
+.comment-box-div2 input{
+    width: 70%;
+    height: 45px;
+    margin-left: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: rgb(2 6 12 / 80%);
+    border:solid 2px rgb(2 6 12 / 25%);
+}
+.comment-box-div2 input::placeholder{
+    color: rgb(2 6 12 / 60%);
+}
+.comment-box-div2 button{
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #5b2ff0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* -------------------- side-bar styling goes here -------------------- */
+
+.side-bar{
+    position: fixed;
+    top: 1;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;   
+    margin-right: 60px;
+    padding-top: 104px;
+    padding-bottom: 47px;
+    min-width: 25%;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.side-bar::-webkit-scrollbar{
+    display: none;
+}
+
+/* ---------------stats-box styling goes here ----------- */
+
+.stats-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+    box-shadow:  rgba(0, 0, 0, 0.05) 0px 4px 6px -2px,rgba(0, 0, 0, 0.05) 0px -4px 6px -2px;
+}
+.stats-box div{
+    width: 90%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+.stats-box div p i{
+    margin-left: 5px;
+    color: rgb(2 6 12 / 60%);;
+}
+
+/*  -----------------widget-box styling goes here --------------- */
+
+.widget-box{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 18px;
+}
+.widget-box-sub-container1{
+    display: flex;
+}
+.widget-box-sub-container1 button{
+    font-size: 15px;
+    padding: 7px 0px;
+    width: 110px;
+    border: solid 2px lightgray;
+    border-radius: 6px;
+    color: rgb(2 6 12 / 60%);
+    font-weight: 500;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+.widget-box-sub-container1 button:hover{
+    background-color: hsl(0, 0%, 90%);
+    cursor: pointer;
+}
+.widget-box-sub-container2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15px;
+    padding: 0px 10px;
+    padding-top: 5px;
+    width: 93%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.widget-box-sub-container2:hover{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 10px;
+}
+.widget-box-sub-container2 h3{
+    font-size: 16.5px;
+    font-weight: 500;
+    color: rgb(2 6 12 / 85%);
+}
+.widget-box-sub-container2 div{
+    display: flex;
+    gap: 10px;
+    color: gray;
+    align-items: center;
+    font-size: 14.5px;
+}
+.hr{
+    margin-top: 15px;
+    width: 100%;
+    height:1px;
+    opacity: 20%;
+    background-color: #282c3f8c;
+}
+
+
+@media (max-width:1295px)
+{
+    .side-bar{
+        display: none;
+   }
+   .main-container{
+        align-items: center;
+   }
+   .sub-container1{
+        min-width: 987px;
+        margin-left: 0;
+   }
+   .sub-container2{
+        min-width: 987px;
+        margin-left: 0;
+  }
+}
+@media(max-width:1088px){
+    header{
+        height: 70px;
+    }
+    .nav-bar-items ul{
+        display: none;
+    }
+    .nav-bar-items div img{
+        display: none;
+    }
+    .nav-bar-items div i{
+        display:flex;
+    }
+    .sub-container1{
+        min-width: 787px;
+        margin-left: 0;
+   }
+   .sub-container2{
+        min-width: 787px;
+        margin-left: 0;
+  }
+}
+@media (max-width:875px)
+{
+   .sub-container1{
+        min-width: 587px;
+        margin-left: 0;
+   }
+   .sub-container2{
+        min-width: 587px;
+        margin-left: 0;
+  }
+}
+@media (max-width:655px)
+{
+   .sub-container1{
+        min-width: 487px;
+        padding: 30;
+        margin-top: 23px;
+   }
+   .sub-container2{
+        min-width: 487px;
+        margin-left: 0;
+  }
+}
+@media (max-width:455px)
+{
+    body{
+        position: relative;
+        padding-bottom: 170px;
+    }
+    .main-container{
+    margin-bottom: 0;
+    }
+   .sub-container1{
+        min-width: 377px;
+    }
+   .sub-container2{
+        min-width: 377px;
+    }
+  .sub-container1-title div h2{
+    font-size: 20px;
+    }
+  .sub-container1-title div i{
+        font-size: 20px;
+    }
+    .sub-container1-title h5{
+        font-size: 13px;
+    }
+    .sub-container1-content p{
+        font-size: 14.5px;
+    }
+    .sub-container1-content h3{
+        font-size: 17.5px;
+    }
+    .likes-share-container{
+        width: 100%;
+    }
+    .likes-share-container div{
+        gap: 13px;
+    }
+    .likes-share-container div div i{
+        font-size: 18px;
+    }
+    .sub-container2{
+        padding: 20px 25px;
+        gap:13px;
+        position: absolute;
+        bottom:20;
+    }
+    .comment-box-div1 p{
+        font-size: 15px;
+    }
+    .comment-box-div2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .comment-box-div2 input{
+        width: 100%;
+        margin-left: 0;
+        font-size: 14px;
+    }
+    .comment-box-div2 button{
+        padding:10px 25px;
+        align-self: flex-end;
+    }
+    header{
+        padding:0 15px;
+    }
+    .nav-bar-logo a{
+        font-size: 18px;
+    }
+    .side-bar{
+        display: flex;
+        position:static;
+        width: 92%;
+        /* margin: 0; */
+        margin-left: 18px;
+        padding-top: 30;
+        overflow: hidden;
+        
+    }
+}
+@media (max-width:395px){
+    .sub-container1{
+        min-width: 355px;
+    }
+    .sub-container2{
+        min-width: 355px;
+    }
+    .side-bar{
+        width: 90%;
+        min-height:826px ;
+    }
+    .widget-box-sub-container2{
+        width: 100%;
+    }
+}
+@media (max-width:380px){
+    .side-bar{
+        width: 92.5%;
+        min-height: 826px
+    }
+    .widget-box-sub-container2{
+        padding-right: 0;
+    }
+}
